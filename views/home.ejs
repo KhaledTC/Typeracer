@@ -1,0 +1,19 @@
+<%-include('partials/head.ejs')%>
+
+<p id="quoteText" style="display: none"><%=quote.data.content%></p>
+<div class="mainBody">
+  <div>
+    <p id="result"></p>
+  </div>
+  <img src="/images/car.png" id="car" style="width: 60px; height: auto" />
+  <hr id="road" />
+  <div class="gameBody">
+    <h3 id="quote" class="unselectable"></h3>
+    <h4>― <%=quote.data.author%></h4>
+    <input type="text" id="input" />
+    <script type="module" src="/js/script.js"></script>
+    <button id="btn" onclick="window.location.reload();">Play</button>
+  </div>
+</div>
+
+<%-include('partials/footer.ejs')%>
